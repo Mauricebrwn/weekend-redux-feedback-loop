@@ -10,16 +10,53 @@ import { Provider } from 'react-redux';
 const feedbackList = (state = [], action) => {
     switch (action.type) {
         case 'SET_FEEDBACKLIST':
-            return action.payload;
+            return [...state, action.payload]
             default:
                 return state;
     } 
 }
 
+const feeling = (state = 0, action) => {
+    if (action.type === 'SET_FEELING_NUMBER') {
+        let feelingInput = Number(action.payload);
+        return feelingInput
+    }
+    return state;
+}
+
+const understanding = (state = 0, action) => {
+    if (action.type === 'SET_UNDERSTANDING_NUMBER') {
+        let understandingInput = Number(action.payload);
+        return understandingInput
+    }
+    return state;
+}
+
+const support = (state = 0, action) => {
+    if (action.type === 'SET_SUPPORT_NUMBER') {
+        let supportInput = Number(action.payload);
+        return supportInput
+    }
+    return state;
+}
+
+const comments = (state = '', action) => {
+    if (action.type === 'SET_FEELING_NUMBER') {
+        let commentsInput = Number(action.payload);
+        return commentsInput
+    }
+    return state;
+}
+
+
 
 const reduxStore = createStore(
     combineReducers({
-        feedbackList
+        feedbackList,
+        feeling,
+        understanding,
+        support,
+        comments
     }),
     applyMiddleware(logger)
 );
