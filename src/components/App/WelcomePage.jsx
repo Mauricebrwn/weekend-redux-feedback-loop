@@ -1,0 +1,14 @@
+import { useHistory } from "react-router-dom";
+
+function WelcomePage() {
+    const history = useHistory();
+
+    return (
+    <div>
+        <h1>Welcome to the home page</h1>
+        <p>to begin feedback please press the START button</p>
+        <button onClick={()=> history.push('/Feeling')}>START</button>
+    </div>
+    );
+}
+export default WelcomePage;

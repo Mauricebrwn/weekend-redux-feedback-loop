@@ -7,7 +7,7 @@ import { applyMiddleware, combineReducers,createStore } from 'redux';
 import logger from 'redux-logger';
 import { Provider } from 'react-redux';
 
-const feedbackList = (state = [], action) => {
+const SubmitFeedback = (state = [], action) => {
     switch (action.type) {
         case 'SET_FEEDBACKLIST':
             return [...state, action.payload]
@@ -41,7 +41,7 @@ const support = (state = 0, action) => {
 }
 
 const comments = (state = '', action) => {
-    if (action.type === 'SET_FEELING_NUMBER') {
+    if (action.type === 'SET_COMMENTS') {
         let commentsInput = Number(action.payload);
         return commentsInput
     }
@@ -52,7 +52,7 @@ const comments = (state = '', action) => {
 
 const reduxStore = createStore(
     combineReducers({
-        feedbackList,
+        SubmitFeedback,
         feeling,
         understanding,
         support,

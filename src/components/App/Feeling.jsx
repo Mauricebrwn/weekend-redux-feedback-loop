@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import React from "react";
 
-function feeling () {
+function Feeling () {
 
     const [feeling, setFeelingNumber] = useState('');
 
@@ -40,4 +40,4 @@ function feeling () {
     )
 };
 
-export default feeling;
+export default Feeling;
