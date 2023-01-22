@@ -17,7 +17,7 @@ function Support () {
             type: 'SET_SUPPORT_NUMBER',
             payload: support
         })
-        history.push('/Comments')
+        history.push('/Comment')
     };
 
     return (

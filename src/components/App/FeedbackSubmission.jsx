@@ -17,12 +17,12 @@ function SubmitFeedback() {
     
     axios({
         method: 'POST',
-        url:'/feedback',
+        url:'/prime_feedback',
         data:{
             feeling,
             understanding,
             support,
-            comments
+            comments,
         }
     }).then((response) => {
         console.log(response)

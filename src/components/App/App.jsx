@@ -6,6 +6,9 @@ import { HashRouter as Router,Route } from 'react-router-dom';
 import Feeling from './Feeling';
 import Understanding from './Understanding';
 import Support from './Support';
+import SubmitFeedback from './FeedbackSubmission';
+import SuccessPage from './Success';
+import Comment from './Comments';
 
 function App() {
 
@@ -32,7 +35,12 @@ function App() {
     <Route exact path='/Comment'>
       <Comment/>
     </Route>
-
+    <Route exact path='/Feedback'>
+      <SubmitFeedback/>
+    </Route>
+    <Route exact path='/Success'>
+      <SuccessPage/>
+    </Route>
     </Router>
   );
 }

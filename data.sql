@@ -7,9 +7,7 @@ CREATE TABLE "feedback" (
   "feeling" INT not null,
   "understanding" INT not null,
   "support" INT not null,
-  "comments" text,
-  "flagged" boolean default false,
-  "date" date not null default CURRENT_DATE
+  "comments" text
 ); 
 
 -- Sample feedback item

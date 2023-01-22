@@ -42,7 +42,7 @@ const support = (state = 0, action) => {
 
 const comments = (state = '', action) => {
     if (action.type === 'SET_COMMENTS') {
-        let commentsInput = Number(action.payload);
+        let commentsInput = (action.payload);
         return commentsInput
     }
     return state;

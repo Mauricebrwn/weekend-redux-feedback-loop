@@ -17,7 +17,7 @@ function Comment () {
             type: 'SET_COMMENTS',
             payload: comment
         })
-        history.push('/Success')
+        history.push('/Feedback')
     };
 
     return (
