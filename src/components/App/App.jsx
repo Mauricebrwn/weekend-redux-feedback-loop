@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import './App.css';
 import WelcomePage from './WelcomePage';
 import { HashRouter as Router,Route } from 'react-router-dom';
@@ -11,7 +10,7 @@ import SuccessPage from './Success';
 import Comment from './Comments';
 
 function App() {
-
+//the router needed for each route to be pulled for each page when the next button is pressed
   return (
     <Router>
     <div className='App'>
@@ -20,6 +19,7 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
     </div>
+    {/* paths needed for each page on click */}
     <Route exact path='/'>
       <WelcomePage/>
     </Route>

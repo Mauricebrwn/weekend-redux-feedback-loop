@@ -1,3 +1,4 @@
+//all of the imports needed for react and redux
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -6,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { applyMiddleware, combineReducers,createStore } from 'redux';
 import logger from 'redux-logger';
 import { Provider } from 'react-redux';
-
+//the submit feedback function also returns state
 const SubmitFeedback = (state = [], action) => {
     switch (action.type) {
         case 'SET_FEEDBACKLIST':
@@ -15,7 +16,7 @@ const SubmitFeedback = (state = [], action) => {
                 return state;
     } 
 }
-
+//each function used to grab values from inputs
 const feeling = (state = 0, action) => {
     if (action.type === 'SET_FEELING_NUMBER') {
         let feelingInput = Number(action.payload);
@@ -49,7 +50,7 @@ const comments = (state = '', action) => {
 }
 
 
-
+//the redux store with where all of the reducers live 
 const reduxStore = createStore(
     combineReducers({
         SubmitFeedback,
@@ -60,6 +61,6 @@ const reduxStore = createStore(
     }),
     applyMiddleware(logger)
 );
-
+//provider wrapped around the app
 ReactDOM.render(<Provider store={reduxStore}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

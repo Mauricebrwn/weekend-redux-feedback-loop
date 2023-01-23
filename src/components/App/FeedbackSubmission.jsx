@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 // import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import React from "react";
@@ -14,6 +13,7 @@ function SubmitFeedback() {
 
     const handleSubmitFeedback = event => {
         event.preventDefault();
+        
     
     axios({
         method: 'POST',
@@ -30,6 +30,7 @@ function SubmitFeedback() {
         console.log('Feedback POST failed', error)
     })
     history.push('/Success')
+
     };
 
     return (

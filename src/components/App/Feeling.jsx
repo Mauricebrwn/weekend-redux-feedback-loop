@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import React from "react";
 
 function Feeling () {
-
+//dispatch needed for type and payload
     const [feeling, setFeelingNumber] = useState('');
 
     const dispatch = useDispatch();
@@ -19,7 +19,7 @@ function Feeling () {
         })
         history.push('/Understanding')
     };
-
+//the return form with number input and on submit runs the handle const
     return (
         <>
         <h2>How are you feeling today?</h2>
