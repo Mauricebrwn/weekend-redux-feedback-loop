@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import React from "react";
 import { useSelector } from "react-redux";
 import axios from "axios";
-
+//grabs values from the redux store
 function SubmitFeedback() {
     const history = useHistory();
     const feeling = useSelector(store => store.feeling);
@@ -14,7 +14,7 @@ function SubmitFeedback() {
     const handleSubmitFeedback = event => {
         event.preventDefault();
         
-    
+    //post route that takes all of the ratings and puts into the databse on button click
     axios({
         method: 'POST',
         url:'/prime_feedback',
@@ -32,7 +32,7 @@ function SubmitFeedback() {
     history.push('/Success')
 
     };
-
+//grabs values for review before final submit into the database
     return (
         <>
         <h2>Review your feedback</h2>

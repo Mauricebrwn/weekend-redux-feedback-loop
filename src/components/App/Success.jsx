@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 function SuccessPage() {
 
     const history = useHistory();
-
+//success page so on click you are brought back to the beginning page
     const handleLeaveNewFeedback = (event) => {
         event.preventDefault();
         history.push('/')

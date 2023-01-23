@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import React from "react";
 
 function Understanding () {
-
+//feeling, support, and undertanding page set up same beside value names.
     const [understanding, setUnderstandingNumber] = useState('');
 
     const dispatch = useDispatch();

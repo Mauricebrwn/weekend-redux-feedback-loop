@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import React from "react";
-
+//feeling, support, and undertanding page set up same beside value names.
 function Support () {
 
     const [support, setSupportNumber] = useState('');

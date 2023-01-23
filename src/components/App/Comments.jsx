@@ -19,7 +19,7 @@ function Comment () {
         })
         history.push('/Feedback')
     };
-
+//return diffrent just text used for comments
     return (
         <>
         <h2>Any Comments you want to leave?</h2>
