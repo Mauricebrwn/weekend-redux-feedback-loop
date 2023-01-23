@@ -21,6 +21,7 @@ p {
 input{
   margin-left: 1cm;
   width: 1cm;
+  padding: 5px;
 }
 .comment {
   width: 3cm;
@@ -32,4 +33,5 @@ button {
   background-color: #3a84fa;
   font-size: 15px;
   border-radius: 4px;
+  padding: 5px;
 }
