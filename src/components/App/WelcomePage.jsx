@@ -7,7 +7,7 @@ function WelcomePage() {
     <div>
         <h1>Welcome to the home page</h1>
         <p>To begin feedback please press the START button</p>
-        <button onClick={()=> history.push('/Feeling')}>START</button>
+        <button className="start" onClick={()=> history.push('/Feeling')}>START</button>
     </div>
     );
 }

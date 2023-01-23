@@ -22,9 +22,9 @@ function Comment () {
 //return diffrent just text used for comments
     return (
         <>
-        <h2>Any Comments you want to leave?</h2>
+        <h2>Any comments you want to leave?</h2>
         <form onSubmit={handleComments}>
-        <input
+        <input className="comment"
         type="text"
         value={comment}
         onChange={(event) => setComments(event.target.value)}

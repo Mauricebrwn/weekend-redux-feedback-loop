@@ -36,12 +36,12 @@ function SubmitFeedback() {
     return (
         <>
         <h2>Review your feedback</h2>
-            <div>Feeling:{feeling}</div>
-            <div>Understanding:{understanding}</div>
-            <div>Support:{support}</div>
-            <div>Commments:{comments}</div>
+            <p>Feeling:{feeling}</p>
+            <p>Understanding:{understanding}</p>
+            <p>Support:{support}</p>
+            <p>Commments:{comments}</p>
 
-        <button onClick={handleSubmitFeedback}>SUBMIT FEEDBACK</button>
+        <button className="start" onClick={handleSubmitFeedback}>SUBMIT FEEDBACK</button>
         </>
     )
 };

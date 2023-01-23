@@ -12,7 +12,7 @@ function SuccessPage() {
     return(
         <>
         <h2>Thank you!</h2>
-        <button onClick={handleLeaveNewFeedback}>Leave new feedback</button>
+        <button className="start" onClick={handleLeaveNewFeedback}>Leave new feedback</button>
         </>
     )
 };

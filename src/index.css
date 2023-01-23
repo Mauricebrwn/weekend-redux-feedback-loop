@@ -3,3 +3,27 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+div {
+  padding-bottom: 2cm;
+}
+h1 {
+  padding: 1cm;
+}
+h2{
+  padding: 1cm;
+  font-size: xx-large;
+}
+p {
+  padding: 1cm;
+  font-size: larger;
+}
+input{
+  margin-left: 1cm;
+  width: 1cm;
+}
+.comment {
+  width: 3cm;
+}
+.start {
+  margin-left: 1cm;
+}
