@@ -23,8 +23,8 @@ function Feeling () {
     return (
         <>
         <h2>How are you feeling today?</h2>
-        <p>1 = Not well at all <br>
-        </br> 5 = Extreamly well</p>
+        <p>1 = Not well at all </p>
+        <p> 5 = Extreamly well</p>
         <form onSubmit={handleFeelingNumber}>
         <input
         type="number"

@@ -23,8 +23,8 @@ function Support () {
     return (
         <>
         <h2>How well are you being supported?</h2>
-        <p>1 = Not well at all <br>
-        </br> 5 = Extreamly well</p>
+        <p>1 = Not well at all </p>
+        <p> 5 = Extreamly well</p>
         <form onSubmit={handleSupportNumber}>
         <input
         type="number"

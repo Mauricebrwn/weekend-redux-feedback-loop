@@ -6,7 +6,7 @@ function WelcomePage() {
     return (
     <div>
         <h1>Welcome to the home page</h1>
-        <p>to begin feedback please press the START button</p>
+        <p>To begin feedback please press the START button</p>
         <button onClick={()=> history.push('/Feeling')}>START</button>
     </div>
     );
